@@ -1,7 +1,7 @@
 (() => {
   let yOffset = window.pageYOffset;
   const sceneInfo = {
-    sceneHeightNum: 10, // 브라우저 높이의 sceneHeightNum 배로 sceneHeight 세팅
+    sceneHeightNum: 5, // 브라우저 높이의 sceneHeightNum 배로 sceneHeight 세팅
     sceneHeight: 0,
     videoImageCount: 499,
     videoImages: [],
@@ -15,6 +15,7 @@
     },
     settings: {
       imageSequence: {startValue: 1, endValue: 500, startScroll: 0, endScroll: 1},
+      canvas_opacity_out: {startValue: 1, endValue: 0, startScroll: 0.9, endScroll: 1},
       message1_opacity_in: {startValue: 0, endValue: 1, startScroll: 0.1, endScroll: 0.2},
       message1_opacity_out: {startValue: 1, endValue: 0, startScroll: 0.25, endScroll: 0.3},
       message1_translateY_in: {startValue: 20, endValue: 0, startScroll: 0.1, endScroll: 0.2},
@@ -44,10 +45,12 @@
 
   // 크기 세팅
   function setLayoutSize () {
+    const heightRatio = window.innerHeight / sceneInfo.dom.canvas.height;
+    const widthRatio = window.innerWidth / sceneInfo.dom.canvas.width;
+
     sceneInfo.sceneHeight = sceneInfo.sceneHeightNum * window.innerHeight;
     sceneInfo.dom.container.style.height = `${sceneInfo.sceneHeight}px`;
-    const heightRatio = window.innerHeight / sceneInfo.dom.canvas.height;
-    sceneInfo.dom.canvas.style.transform = `translate3d(-50%, -50%, 0) scale(${heightRatio})`;
+    sceneInfo.dom.canvas.style.transform = `translate3d(-50%, -50%, 0) scale(${widthRatio > heightRatio ? widthRatio : heightRatio})`;
   }
 
   function calcValue (setting) {
@@ -64,7 +67,7 @@
     }
   }
 
-  function playAnimation () {
+  function onScroll () {
     const dom = sceneInfo.dom;
     const settings = sceneInfo.settings;
     const sceneHeight = sceneInfo.sceneHeight;
@@ -72,6 +75,7 @@
 
     let sequence = Math.round(calcValue(settings.imageSequence));
     dom.canvas.getContext('2d').drawImage(sceneInfo.videoImages[sequence], 0, 0);
+    dom.canvas.style.opacity = calcValue(settings.canvas_opacity_out);
 
     if (scrollRatio <= 0.22) {
       dom.message1.style.opacity = calcValue(settings.message1_opacity_in);
@@ -105,7 +109,7 @@
 
   window.addEventListener('scroll', () => {
     yOffset = window.pageYOffset; // 현재 스크롤 위치
-    playAnimation();
+    onScroll();
   });
 
   window.addEventListener('load', () => {

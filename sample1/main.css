@@ -22,12 +22,19 @@ a {
     position: relative;
     padding-top: 50vh;
 }
+.end-section {
+    height: 100vh;
+    padding-top: 50vh;
+}
 h1 {
     position: relative;
-    top: -10vh;
+    top: -15vh;
     z-index: 5;
     font-size: 4rem;
     text-align: center;
+}
+.end-section {
+    color: rgb(29, 29, 31);
 }
 .main-message {
     display: flex;
@@ -61,7 +68,7 @@ h1 {
 }
 
 @media (min-width: 1024px) {
-    #scroll-section h1 {
+    h1 {
         font-size: 9vw;
     }
     .main-message {
