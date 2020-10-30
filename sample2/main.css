@@ -1,0 +1,99 @@
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+body {
+    overflow-x: hidden;
+    letter-spacing: -0.05em;
+    background: white;
+    color: white;
+}
+p {
+    line-height: 1.6;
+}
+.container {
+    overflow-x: hidden;
+}
+.scene {
+    position: relative;
+    padding-top: 50vh;
+}
+.end-section {
+    height: 100vh;
+    padding-top: 50vh;
+    color: rgb(29, 29, 31);
+}
+h1 {
+    position: relative;
+    top: -15vh;
+    z-index: 5;
+    font-size: 4rem;
+    text-align: center;
+}
+.sticky-elem {
+    display: block;
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+.sticky-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 35vh;
+    margin: 5px 0;
+    height: 3em;
+    font-size: 2.5rem;
+    opacity: 0;
+}
+.sticky-message p {
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+.sticky-elem-canvas {
+    top: 0;
+    height: 100%;
+}
+.sticky-elem-canvas canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.sticky-pin-message {
+    opacity: 0;
+    width: 50%;
+    font-weight: bold;
+}
+.pin {
+    width: 1px;
+    height: 100px;
+    background: white;
+}
+.sticky-pin-message.sticky-message-1 {
+    top: 10%;
+    left: 30%;
+}
+.sticky-pin-message.sticky-message-2 {
+    top: 20%;
+    left: 45%;
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 9vw;
+    }
+    .sticky-message {
+        font-size: 4vw;
+    }
+    .sticky-pin-message {
+        width: 20%;
+    }
+    .sticky-pin-message.sticky-message-1 {
+        top: 30%;
+        left: 43%;
+    }
+    .sticky-pin-message.sticky-message-2 {
+        left: 55%;
+    }
+}
