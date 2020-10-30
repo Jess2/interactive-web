@@ -1,7 +1,7 @@
 (() => {
   let yOffset = window.pageYOffset;
   const sceneInfo = {
-    sceneHeightNum: 5, // 브라우저 높이의 sceneHeightNum 배로 scene의 높이 세팅할 것임
+    sceneHeightNum: 10, // 브라우저 높이의 sceneHeightNum 배로 scene의 높이 세팅할 것임
     sceneHeight: 0, // scene의 높이
     videoImagesLength: 499, // videoImages의 length
     videoImages: [], // 이미지 dom 객체들을 담을 배열
@@ -35,8 +35,8 @@
     }
   };
 
-  // 비디오 이미지 세팅
-  function setVideoImages () {
+  // 캔버스 이미지 세팅
+  function setCanvasImages () {
     for (let i = 1; i <= sceneInfo.videoImagesLength; i++) {
       let imgElem = new Image();
       imgElem.src = `./images/Sunrise ${i.toString().padStart(3, '0')}.jpg`;
@@ -128,6 +128,6 @@
 
   window.addEventListener('resize', setLayoutSize);
 
-  setVideoImages();
+  setCanvasImages();
   setLayoutSize();
 })();

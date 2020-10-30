@@ -29,8 +29,8 @@
     }
   };
 
-  // 비디오 이미지 세팅
-  function setVideoImages () {
+  // 캔버스 이미지 세팅
+  function setCanvasImages () {
     for (let i = 1; i <= sceneInfo.videoImagesLength; i++) {
       let imgElem = new Image();
       imgElem.src = `./images/Corona ${i.toString().padStart(3, '0')}.jpg`;
@@ -108,6 +108,6 @@
 
   window.addEventListener('resize', setLayoutSize);
 
-  setVideoImages();
+  setCanvasImages();
   setLayoutSize();
 })();
