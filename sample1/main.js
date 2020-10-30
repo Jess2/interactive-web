@@ -1,20 +1,20 @@
 (() => {
   let yOffset = window.pageYOffset;
   const sceneInfo = {
-    sceneHeightNum: 5, // 브라우저 높이의 sceneHeightNum 배로 sceneHeight 세팅
-    sceneHeight: 0,
-    videoImageCount: 499,
-    videoImages: [],
+    sceneHeightNum: 5, // 브라우저 높이의 sceneHeightNum 배로 scene의 높이 세팅할 것임
+    sceneHeight: 0, // scene의 높이
+    videoImagesLength: 499, // videoImages의 length
+    videoImages: [], // 이미지 dom 객체들을 담을 배열
     dom: {
-      container: document.querySelector('#scroll-section'),
-      message1: document.querySelector('#scroll-section .main-message-1'),
-      message2: document.querySelector('#scroll-section .main-message-2'),
-      message3: document.querySelector('#scroll-section .main-message-3'),
-      message4: document.querySelector('#scroll-section .main-message-4'),
+      container: document.querySelector('#scene'),
+      message1: document.querySelector('#scene .sticky-message-1'),
+      message2: document.querySelector('#scene .sticky-message-2'),
+      message3: document.querySelector('#scene .sticky-message-3'),
+      message4: document.querySelector('#scene .sticky-message-4'),
       canvas: document.querySelector('#video-canvas'),
     },
     settings: {
-      imageSequence: {startValue: 1, endValue: 500, startScroll: 0, endScroll: 1},
+      imageSequence: {startValue: 0, endValue: 498, startScroll: 0, endScroll: 1},
       canvas_opacity_out: {startValue: 1, endValue: 0, startScroll: 0.9, endScroll: 1},
       message1_opacity_in: {startValue: 0, endValue: 1, startScroll: 0.1, endScroll: 0.2},
       message1_opacity_out: {startValue: 1, endValue: 0, startScroll: 0.25, endScroll: 0.3},
@@ -35,10 +35,11 @@
     }
   };
 
+  // 비디오 이미지 세팅
   function setVideoImages () {
-    for (let i = 0; i < sceneInfo.videoImageCount; i++) {
+    for (let i = 1; i <= sceneInfo.videoImagesLength; i++) {
       let imgElem = new Image();
-      imgElem.src = `./images/sunrise/Sunrise ${(i + 1).toString().padStart(3, '0')}.jpg`;
+      imgElem.src = `./images/sunrise/Sunrise ${i.toString().padStart(3, '0')}.jpg`;
       sceneInfo.videoImages.push(imgElem);
     }
   }
@@ -53,6 +54,7 @@
     sceneInfo.dom.canvas.style.transform = `translate3d(-50%, -50%, 0) scale(${widthRatio > heightRatio ? widthRatio : heightRatio})`;
   }
 
+  // 애니메이션 값 계산
   function calcValue (setting) {
     const partScrollStart = setting.startScroll * sceneInfo.sceneHeight;
     const partScrollEnd = setting.endScroll * sceneInfo.sceneHeight;
@@ -67,6 +69,7 @@
     }
   }
 
+  // 스크롤
   function onScroll () {
     const dom = sceneInfo.dom;
     const settings = sceneInfo.settings;
@@ -84,6 +87,7 @@
       dom.message1.style.opacity = calcValue(settings.message1_opacity_out);
       dom.message1.style.transform = `translate3d(0, ${calcValue(settings.message1_translateY_out)}%, 0)`;
     }
+
     if (scrollRatio <= 0.42) {
       dom.message2.style.opacity = calcValue(settings.message2_opacity_in);
       dom.message2.style.transform = `translate3d(0, ${calcValue(settings.message2_translateY_in)}%, 0)`;
@@ -91,6 +95,7 @@
       dom.message2.style.opacity = calcValue(settings.message2_opacity_out);
       dom.message2.style.transform = `translate3d(0, ${calcValue(settings.message2_translateY_out)}%, 0)`;
     }
+
     if (scrollRatio <= 0.62) {
       dom.message3.style.opacity = calcValue(settings.message3_opacity_in);
       dom.message3.style.transform = `translate3d(0, ${calcValue(settings.message3_translateY_in)}%, 0)`;
@@ -98,6 +103,7 @@
       dom.message3.style.opacity = calcValue(settings.message3_opacity_out);
       dom.message3.style.transform = `translate3d(0, ${calcValue(settings.message3_translateY_out)}%, 0)`;
     }
+
     if (scrollRatio <= 0.82) {
       dom.message4.style.opacity = calcValue(settings.message4_opacity_in);
       dom.message4.style.transform = `translate3d(0, ${calcValue(settings.message4_translateY_in)}%, 0)`;
