@@ -17,7 +17,6 @@ p {
 .scene {
     position: relative;
     padding-top: 50vh;
-    border-bottom: 3px solid red;
 }
 .end-section {
     height: 100vh;

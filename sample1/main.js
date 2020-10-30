@@ -39,7 +39,7 @@
   function setVideoImages () {
     for (let i = 1; i <= sceneInfo.videoImagesLength; i++) {
       let imgElem = new Image();
-      imgElem.src = `./images/sunrise/Sunrise ${i.toString().padStart(3, '0')}.jpg`;
+      imgElem.src = `./images/Sunrise ${i.toString().padStart(3, '0')}.jpg`;
       sceneInfo.videoImages.push(imgElem);
     }
   }
@@ -75,6 +75,8 @@
     const settings = sceneInfo.settings;
     const sceneHeight = sceneInfo.sceneHeight;
     const scrollRatio = yOffset / sceneHeight;
+
+    console.log(scrollRatio);
 
     let sequence = Math.round(calcValue(settings.imageSequence));
     dom.canvas.getContext('2d').drawImage(sceneInfo.videoImages[sequence], 0, 0);
