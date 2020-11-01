@@ -27,17 +27,14 @@ p {
     color: rgb(29, 29, 31);
 }
 .title-message {
-    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1rem;
     font-size: 2rem;
     color: #888;
+    padding-bottom: 300px;
 }
 .title-message strong {
     color: rgb(29, 29, 31);
-}
-.image-blend-canvas {
-    background: blue;
 }
 .canvas-caption {
     max-width: 1000px;
@@ -53,13 +50,16 @@ h1 {
     font-size: 4rem;
     text-align: center;
 }
+.image-blend-canvas.sticky {
+    position: fixed;
+    top: 0;
+}
 @media (min-width: 1024px) {
     h1 {
         font-size: 9vw;
     }
     .title-message {
-        width: 1000px;
-        padding: 0;
+        /*padding: 0;*/
         font-size: 4vw;
     }
     .canvas-caption {
