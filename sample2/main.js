@@ -64,7 +64,7 @@
   }
 
   // 스크롤
-  function onScroll () {
+  function playAnimation () {
     const dom = sceneInfo.dom;
     const settings = sceneInfo.settings;
     const sceneHeight = sceneInfo.sceneHeight;
@@ -97,7 +97,7 @@
 
   window.addEventListener('scroll', () => {
     yOffset = window.pageYOffset; // 현재 스크롤 위치
-    onScroll();
+    playAnimation();
   });
 
   window.addEventListener('load', () => {
