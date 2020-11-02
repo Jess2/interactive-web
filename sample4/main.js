@@ -1,18 +1,16 @@
 (() => {
   let yOffset = window.pageYOffset;
   const sceneInfo = {
-    sceneHeightNum: 5, // 브라우저 높이의 sceneHeightNum 배로 scene의 높이 세팅할 것임
+    sceneHeightNum: 4, // 브라우저 높이의 sceneHeightNum 배로 scene의 높이 세팅할 것임
     sceneHeight: 0, // scene의 높이
     dom: {
       container: document.querySelector('#scene'),
       message1: document.querySelector('#scene .sticky-message-1'),
     },
     settings: {
-      // background: linear-gradient(150deg, rgb(15, 68, 167) 100%, rgb(217, 90, 90) 200%, rgb(76, 167, 84) 300%);
-      // linear-gradient(150deg, rgb(15, 68, 167) -200%, rgb(217, 90, 90) -100%, rgb(76, 167, 84) 0%);
-      message1_rgb_blue: {startValue: 100, endValue: -200, startScroll: 0, endScroll: 1},
-      message1_rgb_red: {startValue: 200, endValue: -100, startScroll: 0, endScroll: 1},
-      message1_rgb_green: {startValue: 300, endValue: 0, startScroll: 0, endScroll: 1},
+      message1_rgb_blue: {startValue: 100, endValue: -200, startScroll: 0, endScroll: 0.75},
+      message1_rgb_red: {startValue: 200, endValue: -100, startScroll: 0, endScroll: 0.75},
+      message1_rgb_green: {startValue: 300, endValue: 0, startScroll: 0, endScroll: 0.75},
     }
   };
 
@@ -44,7 +42,6 @@
     const sceneHeight = sceneInfo.sceneHeight;
     const scrollRatio = yOffset / sceneHeight;
 
-    console.log(scrollRatio, dom, dom.message1);
     dom.message1.style.background = `linear-gradient(150deg, rgb(15, 68, 167) ${calcValue(settings.message1_rgb_blue)}%, rgb(217, 90, 90) ${calcValue(settings.message1_rgb_red)}%, rgb(76, 167, 84) ${calcValue(settings.message1_rgb_green)}%)`;
     dom.message1.style.setProperty('-webkit-background-clip', 'text');
   }
