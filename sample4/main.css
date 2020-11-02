@@ -1,0 +1,48 @@
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+body {
+    overflow-x: hidden;
+    letter-spacing: -0.05em;
+    background: white;
+    color: rgb(29, 29, 31);
+}
+p {
+    line-height: 1.6;
+}
+.container {
+    overflow-x: hidden;
+}
+.scene {
+    position: relative;
+    padding-top: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    position: relative;
+    top: -15vh;
+    z-index: 5;
+    font-size: 4rem;
+    text-align: center;
+}
+.sticky-elem {
+    display: block;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 30vh;
+}
+.colorful-text {
+    background: linear-gradient(150deg, rgb(15, 68, 167) 100%, rgb(217, 90, 90) 200%, rgb(76, 167, 84) 300%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 9vw;
+    }
+}
