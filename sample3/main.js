@@ -19,8 +19,6 @@
       rect2: {startValue: 0, endValue: 0, startScroll: 0, endScroll: 0},
       blendHeight: {startValue: 0, endValue: 0, startScroll: 0, endScroll: 0},
       canvas_scale: {startValue: 0, endValue: 0, startScroll: 0, endScroll: 0},
-      canvasCaption_opacity: {startValue: 0, endValue: 1, startScroll: 0, endScroll: 0},
-      canvasCaption_translateY: {startValue: 20, endValue: 0, startScroll: 0, endScroll: 0},
     },
   };
 
@@ -60,7 +58,8 @@
     const settings = sceneInfo.settings;
     const sceneHeight = sceneInfo.sceneHeight;
     const scrollRatio = yOffset / sceneHeight;
-    let step = 0;
+
+    console.log(scrollRatio);
 
     // 가로/세로 모두 꽉 차게 하기 위해서 여기서 세팅(계산 필요)
     const widthRatio = window.innerWidth / sceneInfo.dom.canvas.width;
@@ -102,13 +101,9 @@
     dom.canvas.getContext('2d').fillRect(parseInt(calcValue(settings.rect2)), 0, whiteRectWidth, dom.canvas.height);
 
     if (scrollRatio < settings.rect1.endScroll) { // 캔버스가 브라우저 상단에 닿기 전
-      step = 1;
       dom.canvas.classList.remove('sticky');
     } else { // 닿은 후
       // 이미지 블렌드
-      step = 2;
-
-      // blendHeight: {startValue: 0, endValue: 0, startScroll: 0, endScroll: 0},
       settings.blendHeight.startValue = 0;
       settings.blendHeight.endValue = dom.canvas.height;
       settings.blendHeight.startScroll = settings.rect1.endScroll;
@@ -121,12 +116,10 @@
           0, dom.canvas.height - blendHeight, dom.canvas.width, blendHeight,
       );
 
-
       dom.canvas.classList.add('sticky');
       dom.canvas.style.top = `${-(dom.canvas.height - dom.canvas.height * canvasScaleRatio) / 2}px`;
 
       if (scrollRatio > settings.blendHeight.endScroll) {
-        step = 3;
         settings.canvas_scale.startValue = canvasScaleRatio;
         settings.canvas_scale.endValue = document.body.offsetWidth / (dom.canvas.width * 1.5);
         settings.canvas_scale.startScroll = settings.blendHeight.endScroll;
