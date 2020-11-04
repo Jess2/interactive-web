@@ -1,0 +1,43 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.image-wrapper img {
+    width: 100%;
+}
+
+.eye-wrapper {
+    position: absolute;
+    width: 57px;
+    height: 28px;
+}
+
+.eye-wrapper.left {
+    left: 190px;
+    top: 110px;
+}
+
+.eye-wrapper.right {
+    left: 273px;
+    top: 113px;
+}
+
+.eye {
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    background: white;
+    left: 0;
+    top: 0;
+}
