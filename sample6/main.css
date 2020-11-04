@@ -53,4 +53,10 @@ body {
     border-radius: 50%;
     background-image: url('images/ball.jpg');
     background-size: cover;
+    animation: rotate_image 3s linear infinite;
+}
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
 }
