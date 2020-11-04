@@ -55,7 +55,6 @@
     dom.message1.style.background = `linear-gradient(150deg, rgb(15, 68, 167) ${calcValue(settings.message1_rgb_blue)}%, rgb(217, 90, 90) ${calcValue(settings.message1_rgb_red)}%, rgb(76, 167, 84) ${calcValue(settings.message1_rgb_green)}%)`;
     dom.message1.style.setProperty('-webkit-background-clip', 'text');
     dom.rect.style.transform = `rotateX(${calcValue(settings.rect_rotateX)}deg) rotateY(${calcValue(settings.rect_rotateY)}deg) rotateZ(0deg)`;
-    // dom.rect.style.transform = `rotateX(0deg) rotateY(0deg) rotateZ(0deg)`;
     dom.rect.style.width = `${calcValue(settings.rect_width)}%`;
     dom.rect.style.opacity = `${calcValue(settings.rect_opacity)}`;
     dom.rect.style.background = `linear-gradient(150deg, rgb(15, 68, 167) ${calcValue(settings.rect_rgb_blue)}%, rgb(217, 90, 90) ${calcValue(settings.rect_rgb_red)}%, rgb(76, 167, 84) ${calcValue(settings.rect_rgb_green)}%)`;
