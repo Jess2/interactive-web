@@ -7,8 +7,8 @@
 
 .image-wrapper {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
 }
 
 .image-wrapper img {
@@ -17,26 +17,26 @@
 
 .eye-wrapper {
     position: absolute;
-    width: 57px;
-    height: 28px;
+    width: 34px;
+    height: 17px;
 }
 
 .eye-wrapper.left {
-    left: 190px;
-    top: 110px;
+    left: 114px;
+    top: 66px;
 }
 
 .eye-wrapper.right {
-    left: 273px;
-    top: 113px;
+    left: 164px;
+    top: 68px;
 }
 
 .eye {
     position: absolute;
     display: inline-block;
     border-radius: 50%;
-    width: 28px;
-    height: 28px;
+    width: 17px;
+    height: 17px;
     background: white;
     left: 0;
     top: 0;
