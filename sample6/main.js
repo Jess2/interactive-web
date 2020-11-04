@@ -9,6 +9,7 @@ function playAnimation() {
   const EYE_RIGHT_CY = EYE_RIGHT_RECT.y + (EYE_RIGHT_RECT.height / 2);
 
   document.addEventListener('mousemove', e =>{
+    console.log(calcAngleDegrees(EYE_LEFT_CX - e.clientX, EYE_LEFT_CY - e.clientY))
     EYE_LEFT.style.transform = `rotate(${calcAngleDegrees(EYE_LEFT_CX - e.clientX, EYE_LEFT_CY - e.clientY)}deg)`;
     EYE_RIGHT.style.transform = `rotate(${calcAngleDegrees(EYE_RIGHT_CX - e.clientX, EYE_RIGHT_CY - e.clientY)}deg)`;
   });
@@ -19,3 +20,5 @@ function calcAngleDegrees(x, y) {
 }
 
 playAnimation();
+
+window.addEventListener('resize', playAnimation);
