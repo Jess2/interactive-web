@@ -65,7 +65,7 @@ myImage.addEventListener('load', function() {
       // (추가됨) mappedImage 배열에서 index 로 사용하기 위해서 소수값을 버린 값을 구한다.
       this.position1 = Math.floor(this.y);
       this.position2 = Math.floor(this.x);
-      this.speed = mappedImage[this.position1][this.position2][0]; // 해당 셀의 밝기값을 속도로 지정한다.
+      this.speed = mappedImage[this.position1] ? mappedImage[this.position1][this.position2][0] : 0;// 해당 셀의 밝기값을 속도로 지정한다.
 
       // 밝기가 0에 가까우면 어두운 배경이고 이 때는 굉장히 빠르게 움직인다.
       // 밝기가 2.5에 가까우면 밝은 배경이고 이 때는 굉장히 천천히 움직인다.
