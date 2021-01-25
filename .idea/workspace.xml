@@ -20,16 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="Update README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@shared/images/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/@shared/images/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/@shared/images/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/@shared/images/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/@shared/images/5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/@shared/images/6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/@shared/images/7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/@shared/images/8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/@shared/images/9.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +74,7 @@
       <workItem from="1604126198517" duration="8887000" />
       <workItem from="1607421587185" duration="464000" />
       <workItem from="1610979756462" duration="5642000" />
-      <workItem from="1611557951095" duration="10580000" />
+      <workItem from="1611557951095" duration="10812000" />
     </task>
     <task id="LOCAL-00001" summary="Scroll 값에 따라 이미지가 확장되어 보이도록 구현">
       <created>1604223597902</created>
@@ -142,7 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611575364221</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update README.md">
+      <created>1611576909159</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611576909159</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update README.md">
+      <created>1611577093908</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611577093908</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,10 +187,10 @@
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state width="500" height="445" key="SwitcherDM/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611560865457" />
-    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2" timestamp="1611575366940">
+    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2" timestamp="1611577095179">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
-    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611575366940" />
+    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611577095179" />
     <state x="908" y="458" key="Vcs.Push.Dialog.v2/56.23.2504.1417@56.23.2504.1417" timestamp="1604228484142" />
     <state x="-2460" y="125" width="2360" height="1215" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1610985075127">
       <screen x="-2560" y="25" width="2560" height="1415" />
