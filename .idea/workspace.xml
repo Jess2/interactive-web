@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="Canvas Image Animation 두 가지 구현">
+    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="에러 처리">
+      <change afterPath="$PROJECT_DIR$/sample9/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample9/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample9/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample9/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample9/main2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample8/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sample8/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sample5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sample9" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,13 +59,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sample9" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/sample5" />
+      <recent name="$PROJECT_DIR$/sample4" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sample5" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/sample4" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -71,7 +79,8 @@
       <updated>1604126197208</updated>
       <workItem from="1604126198517" duration="8887000" />
       <workItem from="1607421587185" duration="464000" />
-      <workItem from="1610979756462" duration="5394000" />
+      <workItem from="1610979756462" duration="5642000" />
+      <workItem from="1611557951095" duration="7417000" />
     </task>
     <task id="LOCAL-00001" summary="Scroll 값에 따라 이미지가 확장되어 보이도록 구현">
       <created>1604223597902</created>
@@ -108,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610985199588</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="에러 처리">
+      <created>1610985438652</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610985438652</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,25 +147,35 @@
     <MESSAGE value="이미지 블렌드 추가" />
     <MESSAGE value="함수명 변경" />
     <MESSAGE value="Canvas Image Animation 두 가지 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="Canvas Image Animation 두 가지 구현" />
+    <MESSAGE value="에러 처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="에러 처리" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1542" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611571967530">
+      <screen x="-2560" y="25" width="2560" height="1415" />
+    </state>
+    <state x="-1542" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611571967530" />
     <state x="-1495" y="439" key="RollbackChangesDialog" timestamp="1610985051885">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state x="-1495" y="439" key="RollbackChangesDialog/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1610985051885" />
-    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2" timestamp="1610985201184">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1611560865457">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
-    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1610985201184" />
+    <state width="500" height="445" key="SwitcherDM/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611560865457" />
+    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2" timestamp="1610985439765">
+      <screen x="-2560" y="25" width="2560" height="1415" />
+    </state>
+    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1610985439765" />
     <state x="908" y="458" key="Vcs.Push.Dialog.v2/56.23.2504.1417@56.23.2504.1417" timestamp="1604228484142" />
     <state x="-2460" y="125" width="2360" height="1215" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1610985075127">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state x="-2460" y="125" width="2360" height="1215" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1610985075127" />
-    <state x="1009" y="364" width="598" height="735" key="find.popup" timestamp="1604130092673">
-      <screen x="56" y="23" width="2504" height="1417" />
+    <state x="-1586" y="366" width="612" height="734" key="find.popup" timestamp="1611560861761">
+      <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
+    <state x="-1586" y="366" width="612" height="734" key="find.popup/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611560861761" />
     <state x="1009" y="364" width="598" height="735" key="find.popup/56.23.2504.1417@56.23.2504.1417" timestamp="1604130092673" />
   </component>
 </project>
