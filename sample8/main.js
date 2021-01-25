@@ -12,7 +12,8 @@ myImage.addEventListener('load', function() {
   // 네번째 arg : 이미지 width, 다섯번째 arg : 이미지 height => 이미지가 캔버스 전체 영역을 차지하기 위해서 width는 canvas의 width로, height는 canvas의 height로 설정
   ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
 
-  const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height); // (추가됨) getImageData 메소드는 각 픽셀의 rgba값을 반환한다.
+  const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height); // (추가됨) getImageData 메소드는 각 픽셀의 rgba값과 width, height를 반환한다.
+  console.log('pixels', pixels)
   ctx.clearRect(0, 0, canvas.width, canvas.height); // (추가됨) 각 픽셀의 정보는 pixels 변수에 담고 있고 이미지 자체는 더이상 필요하지 않기 때문에 Canvas를 Clear한다.
 
   let particlesArray = []; // particle들을 담을 배열 (Particle Class로 particle을 생성해서 이 배열에 담을 것이다.)
@@ -65,7 +66,7 @@ myImage.addEventListener('load', function() {
       // (추가됨) mappedImage 배열에서 index 로 사용하기 위해서 소수값을 버린 값을 구한다.
       this.position1 = Math.floor(this.y);
       this.position2 = Math.floor(this.x);
-      this.speed = mappedImage[this.position1][this.position2][0]; // 해당 셀의 밝기값을 속도로 지정한다.
+      this.speed = mappedImage[this.position1] ? mappedImage[this.position1][this.position2][0] : 0;// 해당 셀의 밝기값을 속도로 지정한다.
 
       // 밝기가 0에 가까우면 어두운 배경이고 이 때는 굉장히 빠르게 움직인다.
       // 밝기가 2.5에 가까우면 밝은 배경이고 이 때는 굉장히 천천히 움직인다.
