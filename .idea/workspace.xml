@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="Update README.md">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample8/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sample8/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample9/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sample9/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,8 @@
       <workItem from="1604126198517" duration="8887000" />
       <workItem from="1607421587185" duration="464000" />
       <workItem from="1610979756462" duration="5642000" />
-      <workItem from="1611557951095" duration="10812000" />
+      <workItem from="1611557951095" duration="14008000" />
+      <workItem from="1611580839329" duration="5044000" />
     </task>
     <task id="LOCAL-00001" summary="Scroll 값에 따라 이미지가 확장되어 보이도록 구현">
       <created>1604223597902</created>
@@ -146,7 +149,35 @@
       <option name="project" value="LOCAL" />
       <updated>1611577093908</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update README.md">
+      <created>1611577162558</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611577162558</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update README.md">
+      <created>1611577280465</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611577280465</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Update README.md">
+      <created>1611577392241</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611577392241</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update README.md">
+      <created>1611577404716</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611577404716</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,10 +218,10 @@
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state width="500" height="445" key="SwitcherDM/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611560865457" />
-    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2" timestamp="1611577095179">
+    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2" timestamp="1611577407901">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
-    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611577095179" />
+    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611577407901" />
     <state x="908" y="458" key="Vcs.Push.Dialog.v2/56.23.2504.1417@56.23.2504.1417" timestamp="1604228484142" />
     <state x="-2460" y="125" width="2360" height="1215" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1610985075127">
       <screen x="-2560" y="25" width="2560" height="1415" />
@@ -201,5 +232,9 @@
     </state>
     <state x="-1586" y="366" width="612" height="734" key="find.popup/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611560861761" />
     <state x="1009" y="364" width="598" height="735" key="find.popup/56.23.2504.1417@56.23.2504.1417" timestamp="1604130092673" />
+    <state x="-1615" y="345" key="run.anything.popup" timestamp="1611577997857">
+      <screen x="-2560" y="25" width="2560" height="1415" />
+    </state>
+    <state x="-1615" y="345" key="run.anything.popup/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611577997857" />
   </component>
 </project>
