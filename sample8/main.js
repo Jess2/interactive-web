@@ -13,7 +13,6 @@ myImage.addEventListener('load', function() {
   ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
 
   const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height); // (추가됨) getImageData 메소드는 각 픽셀의 rgba값과 width, height를 반환한다.
-  console.log('pixels', pixels)
   ctx.clearRect(0, 0, canvas.width, canvas.height); // (추가됨) 각 픽셀의 정보는 pixels 변수에 담고 있고 이미지 자체는 더이상 필요하지 않기 때문에 Canvas를 Clear한다.
 
   let particlesArray = []; // particle들을 담을 배열 (Particle Class로 particle을 생성해서 이 배열에 담을 것이다.)
@@ -121,24 +120,3 @@ myImage.addEventListener('load', function() {
 
   animate();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
