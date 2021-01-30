@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="flower shpae 구현">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="docs: Update README.md">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +76,7 @@
       <workItem from="1610979756462" duration="5642000" />
       <workItem from="1611557951095" duration="14008000" />
       <workItem from="1611580839329" duration="6074000" />
-      <workItem from="1611994121241" duration="5613000" />
+      <workItem from="1611994121241" duration="5702000" />
     </task>
     <task id="LOCAL-00001" summary="Scroll 값에 따라 이미지가 확장되어 보이도록 구현">
       <created>1604223597902</created>
@@ -192,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612000434613</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="docs: Update README.md">
+      <created>1612000527687</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1612000527687</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +225,8 @@
     <MESSAGE value="Update README.md" />
     <MESSAGE value="설명 주석 추가" />
     <MESSAGE value="flower shpae 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="flower shpae 구현" />
+    <MESSAGE value="docs: Update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: Update README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1542" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611994159734">
@@ -235,10 +241,10 @@
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state width="500" height="445" key="SwitcherDM/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611560865457" />
-    <state x="-1689" y="442" key="Vcs.Push.Dialog.v2" timestamp="1612000436159">
+    <state x="-1689" y="442" key="Vcs.Push.Dialog.v2" timestamp="1612000529866">
       <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
-    <state x="-1689" y="442" key="Vcs.Push.Dialog.v2/-2560.0.2560.1440/0.0.2560.1440@-2560.0.2560.1440" timestamp="1612000436159" />
+    <state x="-1689" y="442" key="Vcs.Push.Dialog.v2/-2560.0.2560.1440/0.0.2560.1440@-2560.0.2560.1440" timestamp="1612000529866" />
     <state x="-1689" y="459" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611577407901" />
     <state x="908" y="458" key="Vcs.Push.Dialog.v2/56.23.2504.1417@56.23.2504.1417" timestamp="1604228484142" />
     <state x="-2460" y="125" width="2360" height="1215" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1610985075127">
