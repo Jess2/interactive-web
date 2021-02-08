@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Liquid Buttons</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <button>BUTTON 1</button>
+    <button>BUTTON 2</button>
+    <button>BUTTON 3</button>
+  </div>
+
+  <svg>
+    <defs>
+      <filter id='wave'>
+        <feTurbulence type='fractalNoise' baseFrequency='0.06 0.0001' numOctaves='1' result='wrap' />
+        <feDisplacementMap xChannelSelector='R' yChannelSelector='G' scale='30' in='SourceGraphic' in2='wrapOffset' />
+      </filter>
+    </defs>
+  </svg>
+
+  <script src="main.js"></script>
+</body>
+</html>
