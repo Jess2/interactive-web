@@ -20,7 +20,10 @@ button {
     font-size: 40px;
     color: white;
 }
+/* 실제 버튼의 텍스트를 왜곡하지 않고 svg 필터 배경만 왜곡하기 위해서 before을 사용.
+실제 버튼 뒤에 배경을 만든다 */
 button:before {
+    /* content는 before와 after의 필수 속성이다. */
     content: '';
     background: black;
     width: 100%;
@@ -30,8 +33,10 @@ button:before {
     top: 0;
     left: 0;
 }
+/* 버튼 위에 마우스오버하면 애니메이션이 동작되도록 한다 */
 button:hover {
-    animation: squish 0.5s; // duration
+    /* animation name, duration time */
+    animation: squish 0.5s;
 }
 button:hover:before {
     background: linear-gradient(to right, red, green, blue);
