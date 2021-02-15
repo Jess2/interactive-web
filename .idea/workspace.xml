@@ -26,13 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="docs: liquid button 주석 추가">
-      <change afterPath="$PROJECT_DIR$/sample12/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample12/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample12/main.js" afterDir="false" />
+    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="feat: 마우스다운 이벤트가 발생하면 Player가 해당 위치로 이동되도록 처리">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample12/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sample12/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612000527687</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: 마우스다운 이벤트가 발생하면 Player가 해당 위치로 이동되도록 처리">
+      <created>1613382545771</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1613382545771</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +256,8 @@
     <MESSAGE value="설명 주석 추가" />
     <MESSAGE value="flower shpae 구현" />
     <MESSAGE value="docs: Update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: Update README.md" />
+    <MESSAGE value="feat: 마우스다운 이벤트가 발생하면 Player가 해당 위치로 이동되도록 처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 마우스다운 이벤트가 발생하면 Player가 해당 위치로 이동되도록 처리" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1542" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611994159734">

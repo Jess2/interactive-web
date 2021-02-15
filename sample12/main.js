@@ -9,7 +9,7 @@ canvas.width = 800;
 canvas.height = 500;
 
 let score = 0; // 점수
-let gameFrame = 0; // 매 animation loop 마다 1씩 증가시킨다. 100 프레임마다 새로운 버블을 만든다.
+let gameFrame = 0; // 매 animation loop 마다 1씩 증가시킨다. 50 프레임마다 새로운 버블을 만들건데 그걸 계산하기 위한 변수다.
 ctx.font = '50px Georgia'; // Canvas 위에 출력하는 텍스트 폰트를 지정한다.
 
 /*
@@ -60,10 +60,10 @@ class Player {
     // Player의 x 좌표와 mouse의 x 좌표가 다를 경우 Player의 x 좌표에서 그 차이만큼 뺀다.
     // 단 천천히 빼기 위해서 30으로 나눈 값을 뺀다.
     if (mouse.x !== this.x) {
-      this.x -= (dx / 30);
+      this.x -= (dx / 20);
     }
     if (mouse.y !== this.y) {
-      this.y -= (dy / 30); // x와 마찬가지 방식.
+      this.y -= (dy / 20); // x와 마찬가지 방식.
     }
   }
 
@@ -90,14 +90,59 @@ const player = new Player();
 /*
 * Handle Bubbles - pop and score points
 * */
+const bubbles = [];
+
+class Bubble {
+  constructor() {
+    this.radius = 50; // 버블의 반지름값
+    this.x = Math.random() * canvas.width; // x값은 랜덤값으로 설정된다. (0 ~ canvas.width 사이의 랜덤값)
+    this.y = canvas.height + this.radius// bottom에서 시작하기 위해서 canvas.height를 더했다.
+    this.speed = Math.random() * 5 + 1; // 버블의 속도 (1 ~ 6 사이의 랜덤값)
+    this.distance; // player와 버블의 거리
+  }
+
+  update() {
+    this.y -= this.speed; // 버블은 위로 점점 올라간다.
+  }
+
+  draw() {
+    ctx.fillStyle = 'blue'; // 파란색 버블
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.closePath();
+    ctx.stroke();
+  }
+}
+
+function handleBubbles() {
+  // 프레임 50번째마다 버블을 만든다.
+  if (gameFrame % 50 === 0) {
+    bubbles.push(new Bubble());
+  }
+
+  for (let i = 0; i < bubbles.length; i++) {
+    bubbles[i].update();
+    bubbles[i].draw();
+  }
+
+  for (let i = 0; i < bubbles.length; i++) {
+    // canvas보다 더 위로 올라간 버블 배열에서 제거한다.
+    if (bubbles[i].y + this.radius < 0) {
+      bubbles.splice(i, 1);
+    }
+  }
+}
 
 /*
 * Animation Loop
 * */
 function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height); // 이전 paint를 지운다.
+  handleBubbles();
   player.update();
   player.draw();
+  gameFrame++;
   requestAnimationFrame(animate);
 }
 
