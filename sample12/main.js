@@ -98,8 +98,9 @@ class Bubble {
     this.x = Math.random() * canvas.width; // x값은 랜덤값으로 설정된다. (0 ~ canvas.width 사이의 랜덤값)
     this.y = canvas.height + this.radius// bottom에서 시작하기 위해서 canvas.height를 더했다.
     this.speed = Math.random() * 5 + 1; // 버블의 속도 (1 ~ 6 사이의 랜덤값)
-    this.distance; // player와 버블의 거리
+    this.distance = 0; // player와 버블의 거리
     this.counted = false; // 하나의 버블을 잡을 때 한꺼번에 너무 많은 점수가 올라가지 않도록 도와주는 변수
+    this.sound = Math.random() <= 0.5 ? 'sound1' : 'sound2'; // sound 값. (Math.random()은 0~1 사이의 랜덤값을 반환한다.)
   }
 
   update() {
@@ -118,6 +119,12 @@ class Bubble {
     ctx.stroke();
   }
 }
+
+const bubblePop1 = document.createElement('audio');
+bubblePop1.src = 'Plop.ogg';
+
+const bubblePop2 = document.createElement('audio');
+bubblePop2.src = 'bubbles-single2.wav';
 
 function handleBubbles() {
   // 프레임 50번째마다 버블을 만든다.
@@ -138,7 +145,14 @@ function handleBubbles() {
 
     // Player와 Bubble 사이의 거리 체크
     if (bubbles[i].distance < bubbles[i].radius + player.radius) {
+      // 하나의 버블을 잡을 때 한꺼번에 너무 많은 점수가 올라가지 않도록 한다
       if (!bubbles[i].counted) {
+        // 버블을 잡을 때 소리를 재생시킨다.
+        if (bubbles[i].sound === 'sound1') {
+          bubblePop1.play();
+        } else {
+          bubblePop2.play();
+        }
         score++;
         bubbles[i].counted = true;
         bubbles.splice(i, 1);
