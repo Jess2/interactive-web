@@ -58,12 +58,12 @@ class Player {
     const dy = this.y - mouse.y;
 
     // Player의 x 좌표와 mouse의 x 좌표가 다를 경우 Player의 x 좌표에서 그 차이만큼 뺀다.
-    // 단 천천히 빼기 위해서 30으로 나눈 값을 뺀다.
+    // 단 천천히 빼기 위해서 10으로 나눈 값을 뺀다.
     if (mouse.x !== this.x) {
-      this.x -= (dx / 20);
+      this.x -= (dx / 10);
     }
     if (mouse.y !== this.y) {
-      this.y -= (dy / 20); // x와 마찬가지 방식.
+      this.y -= (dy / 10); // x와 마찬가지 방식.
     }
   }
 
@@ -99,10 +99,14 @@ class Bubble {
     this.y = canvas.height + this.radius// bottom에서 시작하기 위해서 canvas.height를 더했다.
     this.speed = Math.random() * 5 + 1; // 버블의 속도 (1 ~ 6 사이의 랜덤값)
     this.distance; // player와 버블의 거리
+    this.counted = false; // 하나의 버블을 잡을 때 한꺼번에 너무 많은 점수가 올라가지 않도록 도와주는 변수
   }
 
   update() {
     this.y -= this.speed; // 버블은 위로 점점 올라간다.
+    const dx = this.x - player.x;
+    const dy = this.y - player.y;
+    this.distance = Math.sqrt(dx*dx + dy*dy);
   }
 
   draw() {
@@ -131,6 +135,15 @@ function handleBubbles() {
     if (bubbles[i].y + this.radius < 0) {
       bubbles.splice(i, 1);
     }
+
+    // Player와 Bubble 사이의 거리 체크
+    if (bubbles[i].distance < bubbles[i].radius + player.radius) {
+      if (!bubbles[i].counted) {
+        score++;
+        bubbles[i].counted = true;
+        bubbles.splice(i, 1);
+      }
+    }
   }
 }
 
@@ -142,6 +155,8 @@ function animate() {
   handleBubbles();
   player.update();
   player.draw();
+  ctx.fillStyle = 'black';
+  ctx.fillText('score: ' + score, 10, 50); // Position (10, 50) 위치에 score 텍스트 추가
   gameFrame++;
   requestAnimationFrame(animate);
 }
