@@ -39,6 +39,12 @@ canvas.addEventListener('mouseup', function(event) {
 /*
 * Create Player Character
 * */
+const playerLeft = new Image();
+playerLeft.src = 'images/fish_left.png';
+
+const playerRight = new Image();
+playerRight.src = 'images/fish_right.png';
+
 class Player {
   constructor() {
     this.x = canvas.width / 2; // player 의 최초 위치 지정
@@ -77,11 +83,17 @@ class Player {
       ctx.stroke();
     }
 
-    ctx.fillStyle = 'red';
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.closePath();
+    ctx.save();
+    ctx.translate(this.x, this.y);
+
+    // Player가 왼쪽으로 이동할때와 오른쪽으로 이동할 때 이미지를 다르게 그린다.
+    if (this.x >= mouse.x) {
+      ctx.drawImage(playerLeft, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight,
+        this.spriteWidth, this.spriteHeight, this.x - 60, this.y - 40, this.spriteWidth / 4, this.spriteHeight / 4);
+    } else {
+      ctx.drawImage(playerRight, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight,
+        this.spriteWidth, this.spriteHeight, this.x - 60, this.y - 40, this.spriteWidth / 4, this.spriteHeight / 4);
+    }
   }
 }
 
@@ -121,10 +133,10 @@ class Bubble {
 }
 
 const bubblePop1 = document.createElement('audio');
-bubblePop1.src = 'Plop.ogg';
+bubblePop1.src = 'sounds/Plop.ogg';
 
 const bubblePop2 = document.createElement('audio');
-bubblePop2.src = 'bubbles-single2.wav';
+bubblePop2.src = 'sounds/bubbles-single2.wav';
 
 function handleBubbles() {
   // 프레임 50번째마다 버블을 만든다.
