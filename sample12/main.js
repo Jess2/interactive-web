@@ -159,18 +159,20 @@ function handleBubbles() {
     }
 
     // Player와 Bubble 사이의 거리 체크
-    if (bubbles[i].distance < bubbles[i].radius + player.radius) {
-      // 하나의 버블을 잡을 때 한꺼번에 너무 많은 점수가 올라가지 않도록 한다
-      if (!bubbles[i].counted) {
-        // 버블을 잡을 때 소리를 재생시킨다.
-        if (bubbles[i].sound === 'sound1') {
-          bubblePop1.play();
-        } else {
-          bubblePop2.play();
+    if (bubbles[i]) {
+      if (bubbles[i].distance < bubbles[i].radius + player.radius) {
+        // 하나의 버블을 잡을 때 한꺼번에 너무 많은 점수가 올라가지 않도록 한다
+        if (!bubbles[i].counted) {
+          // 버블을 잡을 때 소리를 재생시킨다.
+          if (bubbles[i].sound === 'sound1') {
+            bubblePop1.play();
+          } else {
+            bubblePop2.play();
+          }
+          score++;
+          bubbles[i].counted = true;
+          bubbles.splice(i, 1);
         }
-        score++;
-        bubbles[i].counted = true;
-        bubbles.splice(i, 1);
       }
     }
   }
