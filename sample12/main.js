@@ -113,7 +113,7 @@ myImage.addEventListener('load', function () {
 
   class Bubble {
     constructor() {
-      this.radius = 50; // 버블의 반지름값
+      this.radius = Math.random() * 30 + 20; // 버블의 반지름값
       this.x = Math.random() * canvas.width; // x값은 랜덤값으로 설정된다. (0 ~ canvas.width 사이의 랜덤값)
       this.y = canvas.height + this.radius// bottom에서 시작하기 위해서 canvas.height를 더했다.
       this.speed = Math.random() * 5 + 1; // 버블의 속도 (1 ~ 6 사이의 랜덤값)
