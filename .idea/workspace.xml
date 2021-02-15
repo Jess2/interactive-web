@@ -26,8 +26,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="feat: 물고기 Player 의 이동 방향에 따라 angle값 설정하여 회전시켜서 그리기">
+    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="feat: 버블이 존재할 때만 없애도록 처리">
+      <change afterPath="$PROJECT_DIR$/sample12/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample12/images/water.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample12/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample12/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample12/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sample12/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample7/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/sample7/image.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613387044658</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat: 버블이 존재할 때만 없애도록 처리">
+      <created>1613387161767</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1613387161767</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +311,8 @@
     <MESSAGE value="feat: 버블 터뜨릴 때 사운드 재생 기능 추가" />
     <MESSAGE value="feat: 물고기 Player 이미지 추가" />
     <MESSAGE value="feat: 물고기 Player 의 이동 방향에 따라 angle값 설정하여 회전시켜서 그리기" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 물고기 Player 의 이동 방향에 따라 angle값 설정하여 회전시켜서 그리기" />
+    <MESSAGE value="feat: 버블이 존재할 때만 없애도록 처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 버블이 존재할 때만 없애도록 처리" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1542" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611994159734">
@@ -323,9 +336,10 @@
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state x="-2460" y="125" width="2360" height="1215" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1610985075127" />
-    <state x="-1586" y="366" width="612" height="734" key="find.popup" timestamp="1611560861761">
-      <screen x="-2560" y="25" width="2560" height="1415" />
+    <state x="-1586" y="347" width="612" height="747" key="find.popup" timestamp="1613387668673">
+      <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
+    <state x="-1586" y="347" width="612" height="747" key="find.popup/-2560.0.2560.1440/0.0.2560.1440@-2560.0.2560.1440" timestamp="1613387668673" />
     <state x="-1586" y="366" width="612" height="734" key="find.popup/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611560861761" />
     <state x="-1615" y="326" key="run.anything.popup" timestamp="1613381545860">
       <screen x="-2560" y="0" width="2560" height="1440" />
