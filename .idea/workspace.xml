@@ -26,12 +26,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="feat: 버블 터뜨릴 때 사운드 재생 기능 추가">
-      <change afterPath="$PROJECT_DIR$/sample12/images/fish_left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample12/images/fish_right.png" afterDir="false" />
+    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="feat: 물고기 Player 이미지 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample12/Plop.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/sample12/sounds/Plop.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample12/bubbles-single2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/sample12/sounds/bubbles-single2.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample12/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sample12/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613385525316</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat: 물고기 Player 이미지 추가">
+      <created>1613386861944</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1613386861944</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +291,8 @@
     <MESSAGE value="feat: 버블 터뜨리는 기능 추가" />
     <MESSAGE value="feat: 버블 터뜨릴 때 소리 재생 기능 추가" />
     <MESSAGE value="feat: 버블 터뜨릴 때 사운드 재생 기능 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 버블 터뜨릴 때 사운드 재생 기능 추가" />
+    <MESSAGE value="feat: 물고기 Player 이미지 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 물고기 Player 이미지 추가" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1542" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611994159734">

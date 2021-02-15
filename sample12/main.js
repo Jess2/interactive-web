@@ -62,6 +62,7 @@ class Player {
     // Player의 현재 위치와 마우스의 위치를 이용하여 이동할 거리를 구한다.
     const dx = this.x - mouse.x;
     const dy = this.y - mouse.y;
+    this.angle = Math.atan2(dy, dx);
 
     // Player의 x 좌표와 mouse의 x 좌표가 다를 경우 Player의 x 좌표에서 그 차이만큼 뺀다.
     // 단 천천히 빼기 위해서 10으로 나눈 값을 뺀다.
@@ -85,15 +86,17 @@ class Player {
 
     ctx.save();
     ctx.translate(this.x, this.y);
+    ctx.rotate(this.angle);
 
     // Player가 왼쪽으로 이동할때와 오른쪽으로 이동할 때 이미지를 다르게 그린다.
     if (this.x >= mouse.x) {
       ctx.drawImage(playerLeft, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight,
-        this.spriteWidth, this.spriteHeight, this.x - 60, this.y - 40, this.spriteWidth / 4, this.spriteHeight / 4);
+        this.spriteWidth, this.spriteHeight, 0 - 60, 0 - 40, this.spriteWidth / 4, this.spriteHeight / 4);
     } else {
       ctx.drawImage(playerRight, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight,
-        this.spriteWidth, this.spriteHeight, this.x - 60, this.y - 40, this.spriteWidth / 4, this.spriteHeight / 4);
+        this.spriteWidth, this.spriteHeight, 0 - 60, 0 - 40, this.spriteWidth / 4, this.spriteHeight / 4);
     }
+    ctx.restore();
   }
 }
 
