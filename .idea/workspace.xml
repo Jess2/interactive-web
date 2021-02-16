@@ -26,9 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="docs: Update README.md">
+    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="style: 배경 이미지 설정 및 버블 스타일 변경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample11/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sample11/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample12/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sample12/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sample12/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,18 +60,20 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\syjun\projects\interactive-web" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/@shared/images" />
-      <recent name="$PROJECT_DIR$/sample9" />
-      <recent name="$PROJECT_DIR$/sample5" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sample12/sounds" />
+      <recent name="$PROJECT_DIR$/sample12/images" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sample12/images" />
+      <recent name="$PROJECT_DIR$/sample12" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="C:\Users\syjun\projects\interactive-web" />
+      <recent name="$PROJECT_DIR$/@shared/images" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -208,7 +210,63 @@
       <option name="project" value="LOCAL" />
       <updated>1612000527687</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: 마우스다운 이벤트가 발생하면 Player가 해당 위치로 이동되도록 처리">
+      <created>1613382545771</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1613382545771</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: 버블 올라오는 기능 추가">
+      <created>1613384135485</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1613384135485</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: 버블 터뜨리는 기능 추가">
+      <created>1613384730759</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1613384730759</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat: 버블 터뜨릴 때 사운드 재생 기능 추가">
+      <created>1613385525316</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1613385525316</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat: 물고기 Player 이미지 추가">
+      <created>1613386861944</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1613386861944</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat: 물고기 Player 의 이동 방향에 따라 angle값 설정하여 회전시켜서 그리기">
+      <created>1613387044658</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1613387044658</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat: 버블이 존재할 때만 없애도록 처리">
+      <created>1613387161767</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1613387161767</updated>
+    </task>
+    <task id="LOCAL-00025" summary="style: 배경 이미지 설정 및 버블 스타일 변경">
+      <created>1613388445555</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1613388445555</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +277,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -237,7 +307,16 @@
     <MESSAGE value="설명 주석 추가" />
     <MESSAGE value="flower shpae 구현" />
     <MESSAGE value="docs: Update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: Update README.md" />
+    <MESSAGE value="feat: 마우스다운 이벤트가 발생하면 Player가 해당 위치로 이동되도록 처리" />
+    <MESSAGE value="feat: 버블 올라오는 기능 추가" />
+    <MESSAGE value="feat: 버블 터뜨리는 기능 추가" />
+    <MESSAGE value="feat: 버블 터뜨릴 때 소리 재생 기능 추가" />
+    <MESSAGE value="feat: 버블 터뜨릴 때 사운드 재생 기능 추가" />
+    <MESSAGE value="feat: 물고기 Player 이미지 추가" />
+    <MESSAGE value="feat: 물고기 Player 의 이동 방향에 따라 angle값 설정하여 회전시켜서 그리기" />
+    <MESSAGE value="feat: 버블이 존재할 때만 없애도록 처리" />
+    <MESSAGE value="style: 배경 이미지 설정 및 버블 스타일 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: 배경 이미지 설정 및 버블 스타일 변경" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1542" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611994159734">
@@ -252,24 +331,24 @@
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state width="500" height="445" key="SwitcherDM/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611560865457" />
-    <state x="-1689" y="442" key="Vcs.Push.Dialog.v2" timestamp="1612000529866">
+    <state x="-1689" y="442" key="Vcs.Push.Dialog.v2" timestamp="1613385527399">
       <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
-    <state x="-1689" y="442" key="Vcs.Push.Dialog.v2/-2560.0.2560.1440/0.0.2560.1440@-2560.0.2560.1440" timestamp="1612000529866" />
+    <state x="-1689" y="442" key="Vcs.Push.Dialog.v2/-2560.0.2560.1440/0.0.2560.1440@-2560.0.2560.1440" timestamp="1613385527399" />
     <state x="-1689" y="459" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611577407901" />
-    <state x="908" y="458" key="Vcs.Push.Dialog.v2/56.23.2504.1417@56.23.2504.1417" timestamp="1604228484142" />
     <state x="-2460" y="125" width="2360" height="1215" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1610985075127">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state x="-2460" y="125" width="2360" height="1215" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1610985075127" />
-    <state x="-1586" y="366" width="612" height="734" key="find.popup" timestamp="1611560861761">
-      <screen x="-2560" y="25" width="2560" height="1415" />
+    <state x="-1586" y="347" width="612" height="747" key="find.popup" timestamp="1613387668673">
+      <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
+    <state x="-1586" y="347" width="612" height="747" key="find.popup/-2560.0.2560.1440/0.0.2560.1440@-2560.0.2560.1440" timestamp="1613387668673" />
     <state x="-1586" y="366" width="612" height="734" key="find.popup/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611560861761" />
-    <state x="1009" y="364" width="598" height="735" key="find.popup/56.23.2504.1417@56.23.2504.1417" timestamp="1604130092673" />
-    <state x="-1615" y="345" key="run.anything.popup" timestamp="1611577997857">
-      <screen x="-2560" y="25" width="2560" height="1415" />
+    <state x="-1615" y="326" key="run.anything.popup" timestamp="1613381545860">
+      <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
+    <state x="-1615" y="326" key="run.anything.popup/-2560.0.2560.1440/0.0.2560.1440@-2560.0.2560.1440" timestamp="1613381545860" />
     <state x="-1615" y="345" key="run.anything.popup/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611577997857" />
   </component>
 </project>
