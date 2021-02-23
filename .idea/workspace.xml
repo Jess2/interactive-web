@@ -26,8 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="style: 배경 이미지 설정 및 버블 스타일 변경">
+    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="style: 버블 크기 랜덤값으로 생성되도록 처리">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample12/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sample12/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +50,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sample12/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -90,6 +91,7 @@
       <workItem from="1611557951095" duration="14008000" />
       <workItem from="1611580839329" duration="6074000" />
       <workItem from="1611994121241" duration="5702000" />
+      <workItem from="1614089432682" duration="152000" />
     </task>
     <task id="LOCAL-00001" summary="Scroll 값에 따라 이미지가 확장되어 보이도록 구현">
       <created>1604223597902</created>
@@ -266,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613388445555</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="style: 버블 크기 랜덤값으로 생성되도록 처리">
+      <created>1613388713468</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1613388713468</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,17 +325,18 @@
     <MESSAGE value="feat: 물고기 Player 의 이동 방향에 따라 angle값 설정하여 회전시켜서 그리기" />
     <MESSAGE value="feat: 버블이 존재할 때만 없애도록 처리" />
     <MESSAGE value="style: 배경 이미지 설정 및 버블 스타일 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: 배경 이미지 설정 및 버블 스타일 변경" />
+    <MESSAGE value="style: 버블 크기 랜덤값으로 생성되도록 처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: 버블 크기 랜덤값으로 생성되도록 처리" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1542" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611994159734">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state x="-1542" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611994159734" />
-    <state x="-1495" y="439" key="RollbackChangesDialog" timestamp="1610985051885">
+    <state x="-1495" y="439" key="RollbackChangesDialog" timestamp="1613433922688">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
-    <state x="-1495" y="439" key="RollbackChangesDialog/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1610985051885" />
+    <state x="-1495" y="439" key="RollbackChangesDialog/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1613433922688" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1611560865457">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
