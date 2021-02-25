@@ -4,7 +4,7 @@
 
 <br>
 
-### 스크롤 인터랙션
+### Scroll Interaction
 - [Sunrise](https://jess2.github.io/interactive-web/sample1/)
 - [Coronavirus](https://jess2.github.io/interactive-web/sample2/)
 - [Halloween](https://jess2.github.io/interactive-web/sample3/)
