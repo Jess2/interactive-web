@@ -26,10 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="style: 버블 크기 랜덤값으로 생성되도록 처리">
+    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="docs: Update README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample12/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sample12/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <workItem from="1611557951095" duration="14008000" />
       <workItem from="1611580839329" duration="6074000" />
       <workItem from="1611994121241" duration="5702000" />
-      <workItem from="1614089432682" duration="152000" />
+      <workItem from="1614089432682" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="Scroll 값에 따라 이미지가 확장되어 보이도록 구현">
       <created>1604223597902</created>
@@ -275,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613388713468</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="docs: Update README.md">
+      <created>1614089630155</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1614089630155</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +321,6 @@
     <MESSAGE value="Update README.md" />
     <MESSAGE value="설명 주석 추가" />
     <MESSAGE value="flower shpae 구현" />
-    <MESSAGE value="docs: Update README.md" />
     <MESSAGE value="feat: 마우스다운 이벤트가 발생하면 Player가 해당 위치로 이동되도록 처리" />
     <MESSAGE value="feat: 버블 올라오는 기능 추가" />
     <MESSAGE value="feat: 버블 터뜨리는 기능 추가" />
@@ -326,26 +331,27 @@
     <MESSAGE value="feat: 버블이 존재할 때만 없애도록 처리" />
     <MESSAGE value="style: 배경 이미지 설정 및 버블 스타일 변경" />
     <MESSAGE value="style: 버블 크기 랜덤값으로 생성되도록 처리" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: 버블 크기 랜덤값으로 생성되도록 처리" />
+    <MESSAGE value="docs: Update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: Update README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1542" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611994159734">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state x="-1542" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611994159734" />
-    <state x="-1495" y="439" key="RollbackChangesDialog" timestamp="1613433922688">
+    <state x="-1495" y="439" key="RollbackChangesDialog" timestamp="1614089627054">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
-    <state x="-1495" y="439" key="RollbackChangesDialog/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1613433922688" />
+    <state x="-1495" y="439" key="RollbackChangesDialog/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1614089627054" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1611560865457">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state width="500" height="445" key="SwitcherDM/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611560865457" />
-    <state x="-1689" y="442" key="Vcs.Push.Dialog.v2" timestamp="1613385527399">
-      <screen x="-2560" y="0" width="2560" height="1440" />
+    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2" timestamp="1614089631293">
+      <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state x="-1689" y="442" key="Vcs.Push.Dialog.v2/-2560.0.2560.1440/0.0.2560.1440@-2560.0.2560.1440" timestamp="1613385527399" />
-    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611577407901" />
+    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1614089631293" />
     <state x="-2460" y="125" width="2360" height="1215" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1610985075127">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
