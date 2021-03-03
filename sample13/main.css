@@ -1,0 +1,65 @@
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+body {
+    overflow-x: hidden;
+    letter-spacing: -0.05em;
+    background: white;
+    color: black;
+}
+p {
+    line-height: 1.6;
+}
+.container {
+    overflow-x: hidden;
+}
+.scene {
+    position: relative;
+    padding-top: 40vh;
+}
+h1 {
+    position: relative;
+    z-index: 5;
+    font-size: 4rem;
+    text-align: center;
+}
+.sticky-elem {
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+.sticky-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40vh;
+    font-size: 2.5rem;
+    opacity: 0;
+}
+.sticky-message p {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.sticky-message-1 {
+    background: yellow;
+}
+.sticky-message-2 {
+    background: red;
+}
+.sticky-message-3 {
+    background: blue;
+}
+.sticky-message-4 {
+    background: purple;
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 9vw;
+    }
+    .sticky-message {
+        font-size: 4vw;
+    }
+}
