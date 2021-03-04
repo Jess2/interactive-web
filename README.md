@@ -10,6 +10,7 @@
 - [Halloween](https://jess2.github.io/interactive-web/sample3/)
 - [Colorful Text](https://jess2.github.io/interactive-web/sample4/)
 - [Colorful Box](https://jess2.github.io/interactive-web/sample5/)
+- [Sticky Text](https://jess2.github.io/interactive-web/sample13/)
 
 ### Canvas
 - [Crayon](https://jess2.github.io/interactive-web/sample6/)
