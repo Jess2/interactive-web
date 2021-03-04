@@ -26,11 +26,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="docs: Update README.md">
-      <change afterPath="$PROJECT_DIR$/sample13/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample13/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample13/main.js" afterDir="false" />
+    <list default="true" id="3aac153d-1827-4e7d-a2a0-5ae5d6610dea" name="Default Changelist" comment="feat: text 스크롤 인터랙션 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614089630155</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="feat: text 스크롤 인터랙션 추가">
+      <created>1614775936065</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1614775936065</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +340,8 @@
     <MESSAGE value="style: 배경 이미지 설정 및 버블 스타일 변경" />
     <MESSAGE value="style: 버블 크기 랜덤값으로 생성되도록 처리" />
     <MESSAGE value="docs: Update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: Update README.md" />
+    <MESSAGE value="feat: text 스크롤 인터랙션 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: text 스크롤 인터랙션 추가" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1542" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611994159734">
@@ -349,15 +356,19 @@
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state width="500" height="445" key="SwitcherDM/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1611560865457" />
-    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2" timestamp="1614089631293">
+    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2" timestamp="1614775937339">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state x="-1689" y="442" key="Vcs.Push.Dialog.v2/-2560.0.2560.1440/0.0.2560.1440@-2560.0.2560.1440" timestamp="1613385527399" />
-    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1614089631293" />
+    <state x="-1689" y="459" key="Vcs.Push.Dialog.v2/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1614775937339" />
     <state x="-2460" y="125" width="2360" height="1215" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1610985075127">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
     <state x="-2460" y="125" width="2360" height="1215" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1610985075127" />
+    <state x="-1474" y="650" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614775926864">
+      <screen x="-2560" y="25" width="2560" height="1415" />
+    </state>
+    <state x="-1474" y="650" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-2560.25.2560.1415/0.25.2498.1415@-2560.25.2560.1415" timestamp="1614775926864" />
     <state x="-1586" y="366" width="612" height="734" key="find.popup" timestamp="1614774864864">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
